@@ -20,6 +20,14 @@
         <br><br>
       </div>
       {% for event in item.combined %}
+      {% if event.session %}
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-2"> </div>
+          <div class="col-lg-8">
+            <h4>{{ event.session }}</h4>
+          </div>
+        </div>
+      {% endif %}
       <div class="row">
         <div class="col-lg-2 col-lg-offset-2">
           <p>
@@ -27,9 +35,6 @@
           </p>
         </div>
         <div class="col-lg-8">
-          {% if event.session %}
-            <h4>{{ event.session }}</h4>
-          {% endif %}
           {% if event.coffee-break %}
             <p><i class="fa-solid fa-mug-hot" style="font-size:24px;color:#ffffff;"></i>&nbsp {{ event.descr }} </p>
           {% endif %}
@@ -59,12 +64,15 @@
         <br><br>
       </div>
       {% for event in item.combined %}
-      <div class="row">
-        <div class="col-lg-2 col-lg-offset-2">
-          <p>
-            {{ event.time }}
-          </p>
+      {% if event.session %}
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-2"> </div>
+          <div class="col-lg-8">
+            <h4>{{ event.session }}</h4>
+          </div>
         </div>
+      {% endif %}
+      <div class="row">
         <div class="col-lg-8">
           {% if event.session %}
             <h4>{{ event.session }}</h4>
