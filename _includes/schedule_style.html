@@ -47,6 +47,9 @@
           {% if event.tutorial %}
             <p><i class="fa-solid fa-hand" style="font-size:24px;color:#ffffff;"></i>&nbsp {{ event.descr }}</p>
           {%endif %}
+          {% if event.discussion %}
+            <p><i class="fa-solid fa-user-group" style="font-size:24px;color:#ffffff;"></i>&nbsp {{ event.descr }}</p>
+          {%endif %}
         </div>
       </div>
       {% endfor %}
