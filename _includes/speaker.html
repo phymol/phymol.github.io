@@ -16,6 +16,9 @@
           <br><br>
           <h3>{{ ppl.name }}</h3>
           <br>
+          {% if ppl.nameshort %}
+            <br><br>
+          {% endif %}
           <p><i class="fa-solid fa-location-dot" style="font-size:16px;color:#ffffff;"></i>&nbsp {{ ppl.location }}</p>
           </div>
       </div>
