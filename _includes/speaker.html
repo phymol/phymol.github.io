@@ -11,15 +11,13 @@
     <div class="portfolio-flex-row">
     {% for ppl in site.categories.speaker %}
       <div class="portfolio-flex-item portfolio-item">
+          <div class="col-lg-3 text-center">
           <img width="250" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/speaker/{{ ppl.img }}" alt="{{ ppl.alt }}"/>
           <br><br>
           <h3>{{ ppl.name }}</h3>
           <br>
-          <center>
-          <p>
-            <i class="fa-solid fa-location-dot" style="font-size:16px;color:#ffffff;"></i>&nbsp {{ ppl.location }}
-          </p>
-          </center>
+          <p><i class="fa-solid fa-location-dot" style="font-size:16px;color:#ffffff;"></i>&nbsp {{ ppl.location }}</p>
+          </div>
       </div>
     {% endfor %}
     </div>   
