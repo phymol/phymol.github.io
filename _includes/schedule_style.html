@@ -18,16 +18,17 @@
         <h3>{{ item.header }}</h3>
         <br><br>
       </div>
-      {% for (time, info) in (item.times, item.description) %}
+      const combinedData = item.times.map((time, index) => ({time,description: item.descriptions[index],}));
+      {% for data in combinedData %}
       <div class="row">
         <div class="col-lg-2 col-lg-offset-2">
           <p>
-            {{ time }}
+            {{ data.time }}
           </p>
         </div>
         <div class="col-lg-8">
           <p>
-          {{ info }}
+          {{ data.descriptions }}
           </p>
         </div>
       </div>
