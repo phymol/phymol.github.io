@@ -33,7 +33,7 @@ color:
 # Footer settings
 footer:
   copyright: Dr. Carolin Müller
-  location: Contact
+  location: About
   social: Around the Web
   credits: Credits
 
@@ -46,8 +46,9 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: Address Line 1
-  - line: Address Line 2
+  - line: <a href="https://phymol.github.io/" style="color:white">Home</a>
+  - line: <a href="https://phymol.github.io/schedule/" style="color:white">Schedule</a>
+  - line: <a href="https://phymol.github.io/venue/" style="color:white">Venue</a>
 
 # Credits content
 credits: 'Powered by Jekyll.<br> <a href="/impressum/" class="btn btn-lg btn-outline">Impressum</a>' # add impressum as link
