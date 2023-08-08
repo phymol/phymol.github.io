@@ -50,6 +50,9 @@
           {% if event.discussion %}
             <p><i class="fa-solid fa-user-group" style="font-size:24px;color:#ffffff;"></i>&nbsp {{ event.descr }}</p>
           {%endif %}
+          {% if event.fun %}
+            <p><i class="fa-solid fa-face-smile" style="font-size:24px;color:#ffffff;"></i>&nbsp {{ event.descr }}</p>
+          {%endif %}
         </div>
       </div>
       {% endfor %}
@@ -91,6 +94,9 @@
           {%endif %}
           {% if event.discussion %}
             <p><i class="fa-solid fa-user-group" style="font-size:24px;color:#5B5B5B;"></i>&nbsp {{ event.descr }}</p>
+          {%endif %}
+          {% if event.fun %}
+            <p><i class="fa-solid fa-face-smile" style="font-size:24px;color:#5B5B5B;"></i>&nbsp {{ event.descr }}</p>
           {%endif %}
         </div>
       </div>
