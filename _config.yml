@@ -41,6 +41,8 @@ footer:
 social:
   - title: github
     url: https://github.com/phymol/phymol.github.io
+  - title: web
+    url: http://phymol.eu/
 
 # Postal address (add as many lines as necessary)
 address:
