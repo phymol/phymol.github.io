@@ -1,0 +1,35 @@
+{% for item in site.categories.schedule %}
+  {% if item.color-bg %}
+  <section class="success" id="schedule-color">
+    <div class="container">
+      {% for time in item.times %}
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-2">
+          <p>
+            {{ time }}
+          </p>
+        </div>
+        <div class="col-lg-8">
+          <p>
+          {{ item.description[time] }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% else %}
+  <!-- item with white background -->
+  <section id="schedule">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-2">
+
+        </div>
+        <div class="col-lg-8">
+
+        </div>
+      </div> 
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
