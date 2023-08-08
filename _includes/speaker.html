@@ -1,0 +1,23 @@
+<!-- Portfolio Grid Section -->
+<section class="success" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Speaker</h2>
+        <hr class="star-light">
+      </div>
+
+    {% for ppl in site.categories.speaker %}
+        <div class="col-lg-3">
+          <img class="img-responsive" src="https://raw.githubusercontent.com/phymol/pyhmol.github.io/main/img/speakers/{{ ppl.img }}" alt="{{ ppl.alt }}"/>
+          <br><br>
+          <h3>{{ ppl.name }}</h3>
+          <br>
+          <p>
+            <i class="fa-solid fa-location-dot" style="font-size:16px;color:#ffffff;"></i>&nbsp {{ ppl.location }}
+          </p>
+        </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>
