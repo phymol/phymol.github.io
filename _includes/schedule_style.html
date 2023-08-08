@@ -24,15 +24,29 @@
       </script> -->
       {% for event in item.combined %}
       <div class="row">
+        {% if event.session %}
+        <div class="col-lg-12">
+          <p>{{ event.session }}</p>
+        </div>
+        {% endif %}
         <div class="col-lg-2 col-lg-offset-2">
           <p>
             {{ event.time }}
           </p>
         </div>
         <div class="col-lg-8">
-          <p>
-          {{ event.descr }}
-          </p>
+          {% if event.coffee-break %}
+            <p><i class="fa-solid fa-mug-hot" style="font-size:24px;color:#ffffff;"></i>&nbsp {{ event.descr }} </p>
+          {% endif %}
+          {% if event.lunch-break %}
+            <p><i class="fa-solid fa-utensils" style="font-size:24px;color:#ffffff;"></i>&nbsp {{ event.descr }} </p>
+          {% endif %}
+          {% if event.talk %}
+            <p><i class="fa-solid fa-chalkboard-user" style="font-size:24px;color:#ffffff;"></i>&nbsp {{ event.descr }}</p>
+          {% endif %}
+          {% if event.tutorial %}
+            <p><i class="fa-solid fa-hand" style="font-size:24px;color:#ffffff;"></i>&nbsp {{ event.descr }}</p>
+          {%endif %}
         </div>
       </div>
       {% endfor %}
