@@ -6,10 +6,13 @@
         <h2>Speaker</h2>
         <hr class="star-light">
       </div>
+    </div>
 
     {% for ppl in site.categories.speaker %}
+      {% if site.categories.one %}
+      <div class="row">
         <div class="col-lg-3">
-          <img class="img-responsive" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/speaker/{{ ppl.img }}" alt="{{ ppl.alt }}"/>
+          <img class="img-responsive" width="250" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/speaker/{{ ppl.img }}" alt="{{ ppl.alt }}"/>
           <br><br>
           <h3>{{ ppl.name }}</h3>
           <br>
@@ -17,7 +20,34 @@
             <i class="fa-solid fa-location-dot" style="font-size:16px;color:#ffffff;"></i>&nbsp {{ ppl.location }}
           </p>
         </div>
+      </div>
+      {% endif %}
+      {% if site.categories.two %}
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-responsive" width="250" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/speaker/{{ ppl.img }}" alt="{{ ppl.alt }}"/>
+          <br><br>
+          <h3>{{ ppl.name }}</h3>
+          <br>
+          <p>
+            <i class="fa-solid fa-location-dot" style="font-size:16px;color:#ffffff;"></i>&nbsp {{ ppl.location }}
+          </p>
+        </div>
+      </div>
+      {% endif %}
+      {% if site.categories.three %}
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-responsive" width="250" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/speaker/{{ ppl.img }}" alt="{{ ppl.alt }}"/>
+          <br><br>
+          <h3>{{ ppl.name }}</h3>
+          <br>
+          <p>
+            <i class="fa-solid fa-location-dot" style="font-size:16px;color:#ffffff;"></i>&nbsp {{ ppl.location }}
+          </p>
+        </div>
+      </div>
+      {% endif %}
     {% endfor %}
-    </div>
   </div>
 </section>
