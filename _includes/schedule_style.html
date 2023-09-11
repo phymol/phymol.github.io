@@ -60,19 +60,19 @@
           <p>{{ event.descr }}</p>
         </div>
       </div>
-      {% if item.dinner %}
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <p>
-            The social dinner takes place on the 14<sup>th</sup> of September at DOGADO Restaurant et Sushi Bar, 75 Rte d'Esch, 1470 Hollerich Luxembourg.
-          </p>
-          <br>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.830166263573!2d6.1172432765074145!3d49.60095207144229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47954927e25350e7%3A0x87391f8ff6e26870!2sRestaurant%20et%20coin%20Sushi%20DOGADO!5e0!3m2!1sde!2sde!4v1694422341005!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <br>
-        </div>
-      </div>
-      {% endif %}
       {% endfor %}
+    {% if item.dinner %}
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p>
+          The social dinner takes place on the 14<sup>th</sup> of September at DOGADO Restaurant et Sushi Bar, 75 Rte d'Esch, 1470 Hollerich Luxembourg.
+        </p>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.830166263573!2d6.1172432765074145!3d49.60095207144229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47954927e25350e7%3A0x87391f8ff6e26870!2sRestaurant%20et%20coin%20Sushi%20DOGADO!5e0!3m2!1sde!2sde!4v1694422341005!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+      </div>
+    </div>
+    {% endif %}
     </div>
   </section>
   {% else %}
@@ -122,6 +122,7 @@
           <p>{{ event.descr }}</p>
         </div>
       </div>
+      {% endfor %}
       {% if item.dinner %}
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -134,7 +135,6 @@
         </div>
       </div>
       {% endif %}
-      {% endfor %}
     </div>
   </section>
   {% endif %}
