@@ -39,9 +39,9 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - logo: '<img width="150" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/logo_UE.png" alt="Logo 1"/>'
-  - logo: '<img width="150" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/UNI_logo_EN_def.png" alt="Logo 2"/>'
-  - logo: '<img width="150" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/UKRI_logo.png" alt="Logo 3"/>'
+  - logo: '<img height="80" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/logo_UE.png" alt="Logo 1"/>'
+  - logo: '<img height="80" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/UNI_logo_EN_def.png" alt="Logo 2"/>'
+  - logo: '<img height="80" src="https://raw.githubusercontent.com/phymol/phymol.github.io/main/img/UKRI_logo.png" alt="Logo 3"/>'
 
 # Postal address (add as many lines as necessary)
 address:
